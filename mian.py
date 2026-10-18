@@ -1,0 +1,26 @@
+# main.py
+
+def main():
+    # Get user name
+    user_name = input("Please enter your name: ")
+    print(f"Hello, {user_name}! Welcome to the Book Manager.\n")
+    
+    # Get the number of books
+    num_books_str = input("How many books would you like to enter? ")
+    num_books = int(num_books_str)
+    
+    # Create an empty list to store book names
+    books_list = []
+    
+    # Loop to get each book name
+    for i in range(num_books):
+        book_name = input(f"Enter the name of book #{i + 1}: ")
+        books_list.append(book_name)
+        
+    # Display all entered books at the end
+    print("\n--- Your Books List ---")
+    for index, book in enumerate(books_list, start=1):
+        print(f"{index}. {book}")
+
+if __name__ == "__main__":
+    main()
