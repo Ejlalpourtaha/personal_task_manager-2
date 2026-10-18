@@ -1,4 +1,5 @@
 # main.py
+from books import display_books
 
 def main():
     # Get user name
@@ -17,10 +18,8 @@ def main():
         book_name = input(f"Enter the name of book #{i + 1}: ")
         books_list.append(book_name)
         
-    # Display all entered books at the end
-    print("\n--- Your Books List ---")
-    for index, book in enumerate(books_list, start=1):
-        print(f"{index}. {book}")
+    # Call the function from books.py to display the books
+    display_books(books_list)
 
 if __name__ == "__main__":
     main()
