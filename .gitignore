@@ -1,6 +1,9 @@
 # Ignore book data file
 books.json
 
+# Ignore environment variables file
+.env
+
 # Ignore Python cache directory and compiled files
 __pycache__/
 
